@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/ForIndex.css" />
+    <title>Productos | SmartHome</title>
+    <link rel="icon" type="image/png" href="Img/Logo-Title.png" />
+  </head>
+  <body id="IndexBody">
+    <header
+      style="
+        z-index: 999
+          /*es para que quede por encima de todos los elementos y no haya fallas*/;
+      "
+    >
+      <h1>
+        <a href="index.html"><img src="Img/LogoHeader.png" alt="Logo" /></a>
+      </h1>
+      <button class="hamburguesa-btn">&#9776;</button>
+      <!-- Botón de hamburguesa -->
+      <nav class="menu">
+        <ul id="AcomodarHorizontales">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#" style="margin-right: 230px">Explorar</a>
+            <ul class="submenu">
+              <li>
+                <a href="CatalogoProductos.html">Iluminación Inteligente</a>
+              </li>
+              <li>
+                <a href="CatalogoProductos.html"
+                  >Electrodomesticos Inteligentes</a
+                >
+              </li>
+              <li>
+                <a href="CatalogoProductos.html">Climatización Inteligente</a>
+              </li>
+              <li>
+                <a href="CatalogoProductos.html"
+                  >Asistentes de Voz y Controladores</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="BusquedaDIV">
+              <div id="AlineadoBarra">
+                <input id="BarraBusqueda" type="text" placeholder="Buscar..." />
+                <button id="ButtonBusqueda" type="submit">
+                  <img src="Img\IconoBusqueda.png" alt="IconoBuscar" />
+                </button>
+              </div>
+            </div>
+          </li>
+          <li id="AcomodarHorizontales">
+            <div id="CarritoAcomodo">
+              <a href="CatalogoProductos.html"
+                ><img
+                  id="CarritoIcono"
+                  src="Img/CarritoCompra.png"
+                  alt="IconoCarrito"
+              /></a>
+            </div>
+            <div>
+              <a href="Login.html">Iniciar Sesión</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="display: flex">
+          <div class="menu-desplegable" id="menuCategoria">
+            <span id="textoCategoria" onclick="alternarCategoria()"
+              >Categoría</span
+            >
+            <!-- Agregamos un espacio para separar el texto del símbolo -->
+            <span
+              id="iconoCategoria"
+              onclick="alternarCategoria()"
+              style="margin-left: 10px"
+              >+</span
+            >
+            <div
+              class="contenido-desplegable"
+              id="contenidoCategoria"
+              style="display: none"
+            >
+              <!-- Elementos de categoría -->
+              <div class="categoria" onclick="seleccionarCategoria('Todos')">
+                Todos
+              </div>
+              <div
+                class="categoria"
+                onclick="seleccionarCategoria('Electrodomésticos Inteligentes')"
+              >
+                Electrodomésticos Inteligentes
+              </div>
+              <div
+                class="categoria"
+                onclick="seleccionarCategoria('Iluminación Inteligente')"
+              >
+                Iluminación Inteligente
+              </div>
+              <div
+                class="categoria"
+                onclick="seleccionarCategoria('Asistentes de Hogar')"
+              >
+                Asistentes de Hogar
+              </div>
+              <div
+                class="categoria"
+                onclick="seleccionarCategoria('Climatización Inteligente')"
+              >
+                Climatización Inteligente
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+ <section class="contenedor-iluminacion">
+    <div class="contenedorI-items">
+        <!-- 1---------------------------------------------------------------------------------------------------------------------------->
+        <div class="itemI">
+            <img src="Img/Productos/FocoInteligente.jpg" alt="" class="imgI-item">
+            <span class="tituloI-item">MoesGo Foco Inteligente WiFi</span>  
+            <!-- Ajustando el ancho y color de la línea -->
+            <hr class="lineaI">
+            <span class="precioI-item" data-price="388.00">$388.00</span>
+            <button class="botonI-item">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+    <article style="margin-top: 100px"></article>
+    </main>
+    <footer>
+      <div id="OrdenarHorizontal" class="FooterDivAcomodo">
+        <div id="FooterDivUno" style="margin-right: 50px">
+          <p>FAQ</p>
+          <p>CONTACTAR</p>
+          <p style="padding-top: 90px">Veamos los Productos</p>
+          <div
+            id="OrdenarHorizontal"
+            style="justify-content: space-between; padding-top: 100px"
+          >
+            <a href="https://www.facebook.com/profile.php?id=61558080637253">
+              <img
+                src="Img/FacebookLogo.png"
+                alt="FBLOGO"
+                style="width: 25px; height: auto"
+              />
+            </a>
+            <img
+              src="Img/TwitterLogo.png"
+              alt="TWLOGO"
+              style="width: 25px; height: auto"
+            />
+            <img
+              src="Img/YoutubeLogo.png"
+              alt="YTLogo"
+              style="width: 25px; height: auto"
+            />
+          </div>
+          <p>© 2024 SMARTHOME</p>
+        </div>
+
+        <div id="FooterDivDos" style="margin-right: 50px">
+          <p>NOSOTROS</p>
+          <p>
+            SmartHome es tu tienda online de <br />accesorios para hogar
+            inteligente lider <br />en la industria, siempre trabajando con
+            <br />las mejores marcas para llegar a ti.
+          </p>
+          <ul>
+            <li>Lideres en la industria</li>
+            <li>Compras 100% seguras</li>
+            <li>Entregas garantizadas</li>
+          </ul>
+        </div>
+
+        <div id="FooterDivTres">
+          <p>NOVEDADES</p>
+          <p>
+            Registrate con nosotros para recibir informacion <br />acerca de
+            nuestros nuevos productos, los recien <br />llegados y los que estan
+            por llegar, mantente al<br />
+            pendiente de nuestras novedades.
+          </p>
+          <div>
+            <input
+              id="FooterCorreoElectronicoBarra"
+              type="text"
+              name="CorreoElectronico"
+              placeholder="Ingresa tu email aquí*"
+            />
+          </div>
+          <button>Unirse</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

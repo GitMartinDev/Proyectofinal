@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css\ForIndex.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container forms">
+      <div class="form login">
+        <div class="form-content">
+           <div class="login-header">
+             <h1>Iniciar sesión</h1>
+            </div>
+          <form action="#">
+            <div class="form-linkUno">
+              <span>¿Es tu primera vez? <a href="Registro.html">Regístrate</a></span>
+            </div>
+            <div class="field input-field">
+              <div><span>Email*</span></div>
+              <input type="email" placeholder="Email" class="input" />
+            </div>
+          
+             <div class="field input-field">
+               <div><span>Contraseña*</span></div>
+              <input type="password" placeholder="Contraseña" class="password" />
+            </div>
+            </div>
+            <div class="form-link">
+              <a href="#" class="forgot-pass">¿Olvidaste la contraseña?</a>
+            </div>
+            <div class="field button-field">
+               <button onclick="window.location.href='index.html'; return false;">Iniciar sesión</button>
+            </div>
+             <div class="line"></div>
+             <div class="media-options">
+              <a href="#" class="field facebook"><i class='bx bxl-facebook facebook-icon'></i></a>
+              <a href="#" class="field google"><img src="/Img/IconoGoogle.png" alt="" class="google-img"></a>
+              </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="scriptLogin.js"></script>
+  </body>
+</html>
